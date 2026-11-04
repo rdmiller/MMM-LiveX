@@ -27,6 +27,7 @@ with the clock and the other modules over the globe, as in the picture:
     width: '100vw',
     height: '100vh',
     mag: 0.8,
+    bodies: 0,
     lat: 44.98,
     lon: -93.27,
   },
@@ -109,6 +110,7 @@ The ones a mirror most often wants:
 | `callouts` | the label cards beside hazards and launches (a quake's magnitude and depth, a warning's area) | `0` |
 | `latest`, `follow` | `latest: 1` shows the event log; with `follow` the globe turns to each new quake, launch, storm or alert | `0` |
 | `stars` | `1`, `0`, or `photo` | `1` |
+| `bodies` | the Sun and Moon, marked and labeled where they are | `1` |
 | `sharp` | the globe's sharpness: `full`, `balanced` or `saver` | `full` |
 | `logo` | the livex.earth wordmark, bottom left; the data credits stay without it | on |
 | `hazmin` | the least serious hazard shown: `low`, `medium` or `high` | `low` |

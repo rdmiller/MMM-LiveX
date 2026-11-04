@@ -57,6 +57,7 @@ let config = {
         width: '100vw',
         height: '100vh',
         mag: 0.8,
+        bodies: 0,
         lat: 44.98,
         lon: -93.27,
       },
