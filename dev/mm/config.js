@@ -1,5 +1,5 @@
 // A mirror for trying the module: MagicMirror's own clock, weather and calendar for a home in
-// Minneapolis, with the globe facing it in the middle. dev/mm/up.sh serves it.
+// Minneapolis, over the globe facing it, which fills the mirror. dev/mm/up.sh serves it.
 let config = {
   address: '0.0.0.0',
   port: 8080,
@@ -52,9 +52,10 @@ let config = {
     },
     {
       module: 'MMM-LiveX',
-      position: 'middle_center',
+      position: 'fullscreen_below',
       config: {
-        width: '960px',
+        width: '100vw',
+        height: '100vh',
         lat: 44.98,
         lon: -93.27,
       },

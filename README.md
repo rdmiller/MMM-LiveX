@@ -7,7 +7,7 @@ where they are. Over it go hourly clouds, the radar, the aurora, satellites and 
 launches, and hazards from earthquakes to tropical storms. Space is black, so on a mirror the
 globe hangs in the glass.
 
-<img src="docs/mirror.jpg" alt="A portrait MagicMirror: the clock, US holidays and the weather for Minneapolis at the top, and below them the livex.earth globe at night facing Minneapolis, the aurora over Canada and the radar over the Midwest" width="480">
+<img src="docs/mirror.jpg" alt="A portrait MagicMirror filled by the livex.earth globe at night, facing Minneapolis, with the aurora over Canada and the radar over the Midwest; the clock, US holidays and the weather sit over the stars at the top" width="480">
 
 ## Installing
 
@@ -16,18 +16,24 @@ cd ~/MagicMirror/modules
 git clone https://github.com/rdmiller/MMM-LiveX
 ```
 
-There's nothing to `npm install`. Add the module to `config/config.js`:
+There's nothing to `npm install`. Add the module to `config/config.js`. To fill the mirror,
+with the clock and the other modules over the globe, as in the picture:
 
 ```js
 {
   module: 'MMM-LiveX',
-  position: 'middle_center',
+  position: 'fullscreen_below',
   config: {
+    width: '100vw',
+    height: '100vh',
     lat: 44.98,
     lon: -93.27,
   },
 },
 ```
+
+Or in a region of its own, beside the others, at the default size (480 px square) or any
+other: `position: 'middle_center'` and `width: '720px'`.
 
 **Turn on the GPU.** The globe is drawn with WebGL2, and MagicMirror starts Electron with the
 GPU off unless `ELECTRON_ENABLE_GPU=1` is set. Start it with
@@ -48,9 +54,6 @@ To update: `cd ~/MagicMirror/modules/MMM-LiveX && git pull`.
 | `reloadInterval` | how often the page is loaded afresh, in milliseconds, to pick up livex's new releases; `0` never. The data on the globe refreshes itself in between | a day |
 | `unloadWhenHidden` | when the module is hidden (by a motion sensor's module, or pages), unload the page, so it isn't drawing behind the glass; it loads again when shown | `true` |
 | `baseUrl` | another livex host, for a self-hosted copy | `'https://livex.earth/'` |
-
-For the whole mirror, put it in the `fullscreen_below` region with `width: '100vw'` and
-`height: '100vh'`, and the other modules over it.
 
 ## livex.earth's options
 
