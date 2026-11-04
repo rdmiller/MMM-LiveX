@@ -7,6 +7,9 @@ where they are. Over it go hourly clouds, the radar, the aurora, satellites and 
 launches, and hazards from earthquakes to tropical storms. Space is black, so on a mirror the
 globe hangs in the glass.
 
+It needs no API key and no account: the page comes from livex.earth, free, which gathers its
+data from NASA, NOAA, EUMETSAT, USGS and others and credits them on the globe.
+
 <img src="docs/mirror.jpg" alt="A portrait MagicMirror filled by the livex.earth globe at night, facing Minneapolis, with the aurora over Canada and the radar over the Midwest; the clock, US holidays and the weather sit over the stars at the top" width="480">
 
 ## Installing
