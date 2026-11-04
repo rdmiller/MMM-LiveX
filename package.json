@@ -1,0 +1,26 @@
+{
+  "name": "mmm-livex",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A MagicMirror² module showing livex.earth, the live globe",
+  "main": "MMM-LiveX.js",
+  "license": "MIT",
+  "author": "Rob Miller",
+  "homepage": "https://github.com/rdmiller/MMM-LiveX",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rdmiller/MMM-LiveX.git"
+  },
+  "keywords": [
+    "MagicMirror",
+    "MagicMirror2",
+    "earth",
+    "globe",
+    "weather",
+    "aurora",
+    "satellites"
+  ],
+  "scripts": {
+    "test": "node --test"
+  }
+}
