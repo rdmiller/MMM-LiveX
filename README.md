@@ -26,6 +26,7 @@ with the clock and the other modules over the globe, as in the picture:
   config: {
     width: '100vw',
     height: '100vh',
+    mag: 0.8,
     lat: 44.98,
     lon: -93.27,
   },
